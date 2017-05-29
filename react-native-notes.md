@@ -1,3 +1,5 @@
+LEFT OFF ON FOLDER 8
+
 # React Native Notes for OSX
 
 ## SETUP
@@ -73,3 +75,29 @@ The official React Native documentation for "Getting Started" is pretty much wha
 * RN: Portal to the mobile screen
 
  
+## TAGS
+
+* Text: Like a <span>
+* View: Like a <div> ... the utility tag, filling so many roles with its versatility
+
+## STYLING
+
+* Everything in RN gets positioned at the top-left of its container
+* Can be tricky, but flexbox is the key
+* It's mostly the same flexbox as on the Web, but with a few key differences
+* It's a good idea to break Components down as much as possible to contain all the styling
+
+#### FLEXBOX
+
+* justify-content: vertical positioning
+* align-items: horizontal positioning
+
+#### COLORING
+* shadowColor
+* shadowOffset: what tells the element the dimensions of the shadow... width - left/right, height - top/bottom (negative number, positive number... respectively)
+* shadowOpacity
+* elevation
+* position
+
+## APIs, AJAX, PROMISES, etc.
+* install axios: ```npm i -S axios```

@@ -3,11 +3,12 @@
 // Import necessary libraries
 
 import React from 'react';
-import { AppRegistry, Text, View } from 'react-native';
+import { AppRegistry, View } from 'react-native';
 
 // Import necessary files
 
 import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 /* 
 		Create a Component: Same as react aside from the tags we use
@@ -20,11 +21,9 @@ import Header from './src/components/Header';
 const App = () => {
 	return (
 		<View>
-			<Header />
-			<Text>LESS TEXT THAN EVER</Text>
+			<Header headerText={'Albums'} />
+			<AlbumList />
 		</View>
-
-		
 	);
 };
 
