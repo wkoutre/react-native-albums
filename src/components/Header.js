@@ -11,6 +11,7 @@ const Header = (props) => {
 
 	return (
 		<View style={viewStyle}>
+			<Text style={textStyle}>{props.albumText}</Text>	
 			<Text style={textStyle}>{props.headerText}</Text>	
 		</View>
 	);

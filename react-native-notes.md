@@ -1,5 +1,3 @@
-LEFT OFF ON FOLDER 8
-
 # React Native Notes for OSX
 
 ## SETUP
@@ -71,14 +69,25 @@ The official React Native documentation for "Getting Started" is pretty much wha
 ## REACT VS. REACT NATIVE
 
 * REACT: View layer / library that knows how components should behave and how they should work together
-
 * RN: Portal to the mobile screen
-
+* As usual, use functional components UNLESS the Component needs a) State or b) Lifecycle hooks (generally speaking)
  
 ## TAGS
 
-* Text: Like a <span>
-* View: Like a <div> ... the utility tag, filling so many roles with its versatility
+* <Text> : Like a <span>
+* <View> : Like a <div> ... the utility tag, filling so many roles with its versatility
+* <Image> : Like an <img> ; requires {{ source: [uri] }} prop; must explicitly declare dimensions to visually see it render
+* <ScrollView> : like <View> but with scrolling!
+* <TouchableHighlight>, <TouchableOpacity>, etc.
+
+## BUTTONS
+* TouchableHighlight: option for button to turn a different color when the user is tapping it
+* TouchableOpacity: option for button to change opacity when the user is tapping it... dims it
+* read the rest on the react-native docs
+* for something like a Button, we want to make it reusable. This just means using props instead of any hard coding of actions, links, text, etc...
+
+### TOUCHABLES
+* onPress: function to handle onPress
 
 ## STYLING
 
@@ -91,6 +100,7 @@ The official React Native documentation for "Getting Started" is pretty much wha
 
 * justify-content: vertical positioning
 * align-items: horizontal positioning
+* flexDirection: defaults to column in React Native (>.<)
 
 #### COLORING
 * shadowColor
@@ -99,5 +109,23 @@ The official React Native documentation for "Getting Started" is pretty much wha
 * elevation
 * position
 
+### IMAGES
+* set fixed height
+* set flex
+* set null width -- we're INTENTIONALLY doing this to make the image fit the width of the container
+
+### SCROLLING
+* by default: no scrolling
+* 1) Identify expected scrollable Components
+* 2) import 'scroll-view' and wrap content with it
+* 3) MUST add style prop of "flex: 1" to root of App ... "Please expand this Component to fill the entire content area of the device"
+
 ## APIs, AJAX, PROMISES, etc.
 * install axios: ```npm i -S axios```
+
+## REDIRECTING / INTERFACING w/ OTHER APPS
+* Section: APIS > Linking on RN docs
+* Linking Library details how to interface with other apps on the device (Email client, Browser, Uber, etc.)
+
+### LINKING Library
+* openURL(url): url is a plain text url
