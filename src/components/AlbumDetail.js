@@ -33,7 +33,9 @@ const AlbumDetail = (props) => {
 				</CardSection>
 
 				<CardSection>
-					<Button onPress={() => Linking.openURL(url)} buttonText={'BUY'} />
+					<Button onPress={() => Linking.openURL(url)}>
+						BUY
+					</Button>
 				</CardSection>
 			</Card>		
 	);
@@ -63,21 +65,10 @@ const styles = {
 		width: null,
 		flex: 1
 	}
-}
+};
 
 AlbumDetail.PropTypes = {
 	album: PropTypes.array.isRequired
 };
 
 export default AlbumDetail;
-
-/*
-		album:
-			title,
-			artist,
-			url, (Amazon url to purchase album)
-			image, (album artwork)
-			thumbnail_image
-
-
-*/
