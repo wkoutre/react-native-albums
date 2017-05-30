@@ -13,6 +13,8 @@ A mini-project demoing using APIs with React Native to pull data with...
 
 Assuming you have latest stable version of Xcode.
 
+For a complete overview of all Setup required, please refer to my [react-native-notes](https://github.com/wkoutre/react-native-albums/react-native-notes.md).
+
 Must also have react-native-cli installed: ```npm i -g react-native-cli```
 
 ### Clone / Navigate to Directory
